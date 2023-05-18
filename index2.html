@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6Hll97dD/NIJmD1sDiLz6wCmivJhEfdKLmDCB9FUDbLaJnQ2Mgs/khCYOGk78+weOXn0I2bLYPMyGyfXO/q1xQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--style-->
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+
+    <title>Marketplace</title>
+</head>
+<body style="margin:0;padding:0;box-sizing:border-box; font-family: 'Poppins', sans-serif;">
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1><span>My</span>Shop</h1>
+             </div>
+             <img src="cart.png" style="width:30px;height:30px;" alt="">
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#prt">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" style="width:30px;height:30px;" alt="">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    
+    <div class="row">
+        <div class="col-2">
+            <h1>Fashion fades,<br> style is eternal!</h1>
+            <p>Online shopping has become an increasingly popular way for people to buy goods and services from the comfort of their own homes.  <br>These sites offer a wide variety of products from clothing to household items and groceries.</p>
+        </div>
+        <div class="col-2">
+            <img src="redgirl.png" height="400" width="700"  alt="">
+        </div>
+    </div>
+</div>
+ </div>  
+ 
+<!--featured categories section--------------------------->
+<div class="categories" id="prd">
+    <div class="small-container">
+        <div class="row">
+        <div class="col-4"><img src=" top2.jpg" alt=""></div>
+        <div class="col-4"><img src=" product-4.jpg" alt=""></div>
+        <div class="col-4"><img src=" watch.png" alt=""></div>
+        <div class="col-4"><img src=" product-11.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+<!--features products---------------------->
+<div class="small-container" id="prt">
+    <h2 class="title">Features Product</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src=" product-1.jpg" alt=""><br><br>
+            <h4> Printed Tshirt</h4>
+            <p>RS 350.50</p>
+            <!-- <h4>Add to Cart</h4> <img src="cart.png" style="width:30px;height:30px;" alt="" onclick="ADD(350.50)"> -->
+            <input type="button" class="btn" value="ADD TO CART" onclick="ADD(350.50)">
+        </div>
+        <div class="col-4"><img src=" product-3.jpg" alt="">
+            <h4>Trousers</h4>
+            <p>RS 335.00</p>
+        </div>
+        <div class="col-4"><img src=" product-9.jpg" alt="">
+            <h4>Titan Analog Black Dial Men's Watch</h4>
+            <p>RS 370.20</p>
+        </div>
+        <div class="col-4"><img src=" dress2.jpg" alt=""><br><br>
+            <h4>High Low Girl's Dress</h4>
+            <p>RS 345.50</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Product</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src=" kid.jpg" height="400px" alt="">
+            <h4>Girl's Fit and Flare Dress</h4>
+            <p>RS 370.50</p>
+            
+        </div>
+        <div class="col-4"><img src=" boy-1.jpg" alt="">
+            <h4>Formal Shirt</h4>
+            <p>RS 340.50</p>
+        </div>
+        <div class="col-4"><img src=" smartwatch.jpg" height="300px" class="center" alt="" ><br><br>
+            <h4>Smart Watch</h4>
+            <p>RS 336.50</p>
+        </div>
+        <div class="col-4"><img src=" shoes1.jpg"  height="400px" alt="">
+            <h4>Stylish Sports Shoe</h4>
+            <p>RS 360.50</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src=" boy.jpg"  height="300px" alt="">
+            <h4>Black one Weeding Suite</h4>
+            <p>RS 370.00</p>
+        </div>
+        <div class="col-4"><img src=" Ladies-Printed-Shirt-Top.png"  height="300px" alt="">
+            <h4>Red Printed Tshirt</h4>
+            <p>RS 350.50</p>
+        </div>
+        <div class="col-4"><img src=" lond.jpg" height="300px" alt="">
+            <h4>Girl's Party Wear One Piece</h4>
+            <p>RS 350.50</p>
+        </div>
+        <div class="col-4"><img src=" bluetooth.jpg" height="300px" alt="">
+            <h4>Bluetooth Wireless Headphone</h4>
+            <p>RS 370.50</p>
+        </div>
+    </div>
+</div>
+<!--offer-->
+<div class="offer">
+    <div class="row">
+        <div class="col-2">
+            <img src=" exclusive.png" alt="" class="offer-img">
+        </div>
+        <div class="col-2"><p>Exclusive Available on RedStore</p>
+            <h1>Smart Band 4</h1>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita reprehenderit<br> possimus sit excepturi ab suscipit facilis, impedit, assumenda<br></small>
+            <a href="" class="btn">Buy Now &#8594</a>
+            </div>
+            
+    </div>
+</div>
+<!--testimonial section-->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Pariatur, et eveniet Aliqua corporis, molestiae, sint 
+                     cum architecto deserunt debitis, 
+                    </p>
+                    <img src=" user-1.png" alt="">
+                    <h3>Priyanka Dua</h3>
+            </div>
+            <div class="col-3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Pariatur, et eveniet Aliqua corporis, molestiae, sint 
+                     cum architecto deserunt debitis, 
+                    </p>
+                    <img src=" user-2.png" alt="">
+                    <h3>Rahul Dua</h3>
+            </div>
+            <div class="col-3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Pariatur, et eveniet Aliqua corporis, molestiae, sint 
+                     cum architecto deserunt debitis, 
+                    </p>
+                    <img src=" user-3.png" alt="">
+                    <h3>Swetha Dua</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--brands-->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src=" logo-godrej.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src=" logo-oppo.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src=" logo-coca-cola.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src=" logo-paypal.png" alt="">
+            </div>
+            <div class="col-5">
+                <img src=" logo-philips.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footor-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phones </p>
+                <div class="app-logo">
+                    <img src=" app-store.png" alt="">
+                    <img src=" play-store.png" alt="">
+                </div>
+            </div>
+            <div class="footor-col-2">
+                <img src=" cart1-removebg-preview.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita assumenda 
+                    possimus.</p>
+            </div>
+            <div class="footor-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join  Affiliate</li>
+                </ul>
+            </div>
+            <div class="footor-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>instagram</li>
+                    <li>twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        
+    </div>
+</div>
+<!--js for toggle menu -->
+<script>
+    var menu =document.getElementById("MenuItems");
+    menu.style.maxHeight="0px";
+    function menutoggle(){
+        if(menu.style.maxHeight =="0px"){
+            menu.style.maxHeight="200px";
+        }
+        else{
+            menu.style.maxHeight="0px";
+        }
+    }
+    
+</script>
+
+</body>
+</html>
